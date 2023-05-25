@@ -17,8 +17,13 @@
 	<color name="grey">#CCC7C7C9</color>
 	<color name="fgrey">#C7C7C9</color>
 	<color name="login_stroke">#70FFFFFF</color>
-
-	<color name="_bg__homepage_ek2_color">#F8F9FB</color>
+	<color name="black80">#CC000000</color>
+	<color name="bg_homepage_ek2_color">#F8F9FB</color>
 	<color name="outpass_color">#FFFFFF</color>
+	<color name="yellow">#FFB901</color>
+	<color name="op_bg_stroke">#FFB901</color>
+	<color name="time_green">#4BE026</color>
+	<color name="time_red">#E93333</color>
+	<color name="opText">#121515</color>
 	<color name="rectangle_2_color">#ffffff</color>
 </resources>

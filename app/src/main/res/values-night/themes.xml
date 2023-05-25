@@ -3,5 +3,19 @@
     <style name="Theme.May" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorSecondary">@color/yellow</item>
+        <item name="android:textColorPrimary">@color/fblack</item>
+        <item name="android:textColorSecondaryInverse">@color/black80</item>
+    </style>
+    <style name="TimeTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:selectableItemBackground">@color/fgrey</item>
     </style>
 </resources>

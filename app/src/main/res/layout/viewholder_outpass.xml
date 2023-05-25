@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/viewholder_outpass_bg">
 
+    <TextView
+        android:id="@+id/tvDateGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/saira"
+        android:text="3 May, 2023"
+        android:textColor="#465151"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="20dp"
+        app:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/saira"
+        android:text="To"
+        android:textColor="#121515"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tvDateGen"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvDateGen"
+        app:layout_editor_absoluteX="20dp"
+        app:layout_editor_absoluteY="23dp" />
+
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/saira_bold"
+        android:text="Benz Circle"
+
+        android:textColor="#121515"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateGen"
+        app:layout_editor_absoluteX="38dp"
+        app:layout_editor_absoluteY="23dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/saira_bold"
+        android:text="Approved"
+        android:textColor="#4BE026"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_editor_absoluteX="267dp"
+        app:layout_editor_absoluteY="23dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:fontFamily="@font/saira"
+        android:text="#"
+        android:textSize="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOpNum"
+        app:layout_constraintStart_toStartOf="@+id/tvStatus"
+        app:layout_editor_absoluteX="280dp"
+        app:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/tvOpNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/saira_bold"
+        android:text="12345"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_editor_absoluteX="286dp"
+        app:layout_editor_absoluteY="47dp" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView17"-->
+    <!--        app:layout_editor_absoluteX="20dp"-->
+    <!--        app:layout_editor_absoluteY="23dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="To Benz Circle"-->
+    <!--        android:fontFamily="@font/saira"-->
+    <!--        android:textColor="#121515"-->
+    <!--        android:textSize="15dp"-->
+    <!--        tools:layout_editor_absoluteX="23dp"-->
+    <!--        tools:layout_editor_absoluteY="37dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

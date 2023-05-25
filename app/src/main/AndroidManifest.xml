@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -16,13 +18,31 @@
         android:theme="@style/Theme.May"
         tools:targetApi="31">
         <activity
+            android:name=".AfterScan"
+            android:exported="false" />
+        <activity
+            android:name=".QrScan"
+            android:exported="false" />
+        <activity
+            android:name=".OutpassGenerated"
+            android:exported="false" />
+        <activity
+            android:name=".NewOutpassForm"
+            android:exported="false" />
+        <activity
+            android:name=".GuardDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".WardenDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".WardenLogin"
+            android:exported="false" />
+        <activity
             android:name=".StudentDashboard"
             android:exported="false" />
         <activity
             android:name=".GuardLogin"
-            android:exported="false" />
-        <activity
-            android:name=".WardenLogin"
             android:exported="false" />
         <activity
             android:name=".StudentLogin"

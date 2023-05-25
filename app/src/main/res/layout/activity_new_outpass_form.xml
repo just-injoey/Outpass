@@ -1,9 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/generatenewoutpass"
+    android:gravity="top"
+    android:orientation="vertical"
     tools:context=".NewOutpassForm">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="457dp"
+            android:layout_marginEnd="90dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="Time Out"
+            android:textColor="@color/fblack"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDateOut"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="1dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <Button
+            android:id="@+id/btnDateIn"
+            android:layout_width="123dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="66dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/btnTimeIn"
+            android:layout_width="123dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="56dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <Button
+            android:id="@+id/btnTimeOut"
+            android:layout_width="122dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="64dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="590dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="Time In"
+            android:textColor="@color/fblack"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="623dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/outpass_form"
+            android:fontFamily="@font/saira_light"
+            android:gravity="center"
+            android:text="00:00"
+            android:textAlignment="gravity"
+            android:textColor="@color/fblack"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="490dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/outpass_form"
+            android:fontFamily="@font/saira_light"
+            android:gravity="center"
+            android:text="00:00"
+            android:textAlignment="gravity"
+            android:textColor="@color/fblack"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="457dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="Date Out"
+            android:textColor="@color/fblack"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/outpass_form"
+            android:fontFamily="@font/saira_light"
+            android:gravity="center"
+            android:text="DD/MM/YYYY"
+            android:elevation="2dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/fblack"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName2"
+            android:layout_width="350dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/saira_bold"
+            android:text="Student"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRollnum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/saira"
+            android:text="AP00000000000"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHostelName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/saira_bold"
+            android:text="TowerName"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRoomNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/saira_bold"
+            android:text="000"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/saira"
+            android:text="Hello,"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="188dp"
+            android:fontFamily="@font/saira_light"
+            android:text="Tower"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="188dp"
+            android:fontFamily="@font/saira_light"
+            android:text="Room"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="31dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/hamburger_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="97dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="Generate New Outpass"
+            android:textColor="@color/black80"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHostelName2" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="To"
+            android:textColor="@color/fblack"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="90dp"
+            app:layout_editor_absoluteY="344dp" />
+
+        <EditText
+            android:id="@+id/textView21"
+            android:layout_width="282dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="362dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/outpass_form"
+            android:fontFamily="@font/saira"
+            android:hint="Place"
+            android:padding="15dp"
+            android:textColor="@color/fblack"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="590dp"
+            android:fontFamily="@font/saira_semibold"
+            android:text="Date In"
+            android:textColor="@color/fblack"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="623dp"
+            android:background="@drawable/outpass_form"
+            android:fontFamily="@font/saira_light"
+            android:gravity="center"
+            android:text="DD/MM/YYYY"
+            android:elevation="2dp"
+            android:textColor="@color/fblack"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="63dp"
+            android:background="@drawable/login_rect"
+            android:fontFamily="@font/saira_semibold"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
